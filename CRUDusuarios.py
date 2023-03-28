@@ -24,15 +24,15 @@ pestana4 = ttk.Frame(panel)
 titulo = Label(pestana1, text = "Registro de Usuarios", fg = "blue", font = ("Modern", 18)).pack()
 
 varNom = tk.StringVar()
-lblNom = Label(pestana1, text = "Nombre: ").pack()
+lblNom = Label(pestana1, text = "Username: ").pack()
 txtNom = Entry(pestana1, textvariable = varNom).pack()
 
 varCor = tk.StringVar()
-lblCor = Label(pestana1, text = "Correo: ").pack()
+lblCor = Label(pestana1, text = "Email: ").pack()
 txtCor = Entry(pestana1, textvariable = varCor).pack()
 
 varCon = tk.StringVar()
-lblCon = Label(pestana1, text = "Contraseña: ").pack()
+lblCon = Label(pestana1, text = "Password: ").pack()
 txtCon = Entry(pestana1, textvariable = varCon, show = "*").pack()
 
 btnGuardar = Button(pestana1, text = "Guardar Usuario", command = ejecutaInsert).pack()
